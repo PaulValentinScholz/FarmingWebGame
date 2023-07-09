@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'gretoonregular';
+    src: url('../fonts/gretoon-webfont.woff2') format('woff2'),
+    url('../fonts/gretoon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gretoon_highlightregular';
+    src: url('../fonts/gretoonhighlight-webfont.woff2') format('woff2'),
+    url('../fonts/gretoonhighlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

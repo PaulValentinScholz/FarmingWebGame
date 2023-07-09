@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Game</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/overlay.css"/>
+</head>
+<body>
+<div id="gridContainer"></div>
+
+<!-- Labels and Buttons -->
+<div class="overlay">
+    <div class="top-left">
+        <span id="dayLabel">Day: 1</span>
+        <span id="energyLabel">Energy: 10</span>
+        <span id="coinsLabel">Coins: 50</span>
+        <span id="logsLabel">Logs: 0</span>
+        <span id="stonesLabel">Stones: 0</span>
+    </div>
+    <div class="top-right">
+        <span id="rentLabel">Pay 100 coins within the next 5 days.</span>
+        <span id="objectiveLabel">Complete the task.</span>
+    </div>
+    <div class="bottom-icons">
+        <!-- Seeds display -->
+        <div class="carrotButton div-clickable"></div>
+    </div>
+    <div class="bottom-right">
+        <button id="nextDayButton">Next Day</button>
+    </div>
+</div>
+
+
+<script src="js/app.js" type="module"></script>
+<script src="js/grid.js" type="module"></script>
+<script src="js/interaction.js" type="module"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gridContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(25, 100px); /* This makes 10 cells in a row */
+    grid-gap: 10px; /* This is the spacing between the grid cells */
+    background-image: url(/img/water_background.png);
+    background-size: 5%;
+    background-repeat: repeat;
+    animation: scrollBackground 60s linear infinite;
+}
+
+.gridItem {
+    width: 100px;
+    height: 100px;
+}
+
+.gridItem--grass {
+    background-image: url(/img/grass_tile.png);
+    background-size: cover;
+}
+
+.gridItem--house {
+    background-image: url(/img/house_tile.png);
+    background-size: cover;
+}
+
+.gridItem--stone {
+    background-image: url(/img/stone_tile.png);
+    background-size: cover;
+}
+
+.gridItem--tree {
+    background-image: url(/img/tree_tile.png);
+    background-size: cover;
+}
+
+.gridItem--highlight {
+    outline: black;
+    background-color: rgba(255, 255, 255, 30%);
+}
+
+@keyframes scrollBackground {
+    0% {
+        background-position: 0 0;
+    }
+    12.5% {
+        background-position: -16.6vw 16.6vh;
+    }
+    25% {
+        background-position: -16.6vw 33.3vh;
+    }
+    37.5% {
+        background-position: 0 50vh;
+    }
+    50% {
+        background-position: 16.6vw 50vh;
+    }
+    62.5% {
+        background-position: 33.3vw 33.3vh;
+    }
+    75% {
+        background-position: 33.3vw 16.6vh;
+    }
+    87.5% {
+        background-position: 16.6vw 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
